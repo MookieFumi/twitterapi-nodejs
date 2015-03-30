@@ -1,4 +1,5 @@
 /*global require */
+//db.users.find({ year: {$eq: 2015}, week: {$eq: 14}, followers_count: { $gte: 500000 } }).sort( { followers_count: -1 } ).limit(10);
 
 var fs = require('fs'),
     moment = require('moment'),
