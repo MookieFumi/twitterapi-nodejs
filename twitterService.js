@@ -23,7 +23,7 @@ module.exports = {
                 screen_name: usernames
             }, function(error, users) {
                 if (error) throw error;
-
+                
                 var last_update = moment.utc();
                 _.each(clubs, function(club) {
                     club.last_update = last_update;

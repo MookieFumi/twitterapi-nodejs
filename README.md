@@ -15,5 +15,6 @@
 	db['twitter-status'].ensureIndex({
 		'screen_name' : 1, 'year' : 1, 'month' : 1, 'day' : 1
 	}, {
-		unique : true
+		unique : true, 
+		dropDups : true
 	});
