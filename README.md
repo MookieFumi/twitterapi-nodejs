@@ -5,5 +5,3 @@
     git push -f heroku master
     heroku ps:scale web=1
     heroku logs --tail
-
-MookieFumi
