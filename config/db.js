@@ -6,4 +6,5 @@ module.exports = {
     }(),
     twitter_stats: 'twitter-stats',
     user_names: 'user-names',
+    limit: 100
 };

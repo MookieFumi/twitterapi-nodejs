@@ -8,18 +8,21 @@ var moment = require('moment'),
     dbConfig = require('./config/db.js');
 
 global.clubs = [];
+global.remaining = 0;
 
 console.log(colors.bgYellow(moment.utc().toDate() + ' Mongo:' + dbConfig.url));
 
-dataService.getUserNames()
-    .then(twitterService.getQuota)
+twitterService.getQuota()
+    .then(dataService.getUserNames)
     .then(twitterService.getUsersLookup)
     .then(dataService.transformData)
     .then(dataService.saveData)
     .then(dataService.updateUserNames)
     .then(function() {
         console.log(colors.bgBlue("Process finished. " + moment.utc().toDate()));
+        process.exit();
     })
     .fail(function(err) {
         console.log(colors.bgRed(err + '. ' + moment.utc().toDate()));
+        process.exit();
     });

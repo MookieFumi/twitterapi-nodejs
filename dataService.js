@@ -31,8 +31,9 @@ module.exports = {
 
         return deferred.promise;
     },
-    getUserNames: function() {
-        console.log('Data service. Getting users names...');
+    getUserNames: function(remaining) {
+        global.remaining = remaining;
+        console.log('Data service. Getting users names...(remaining: ' + global.remaining +')');
         var deferred = Q.defer();
         var now = moment.utc();
 
@@ -42,7 +43,7 @@ module.exports = {
                 last_update: {
                     $ne: new Date(parseInt(now.format('YYYY')), parseInt(now.format('MM')), parseInt(now.format('DD')))
                 }
-            }).toArray(function(err, data) {
+            }).limit(dbConfig.limit).toArray(function(err, data) {
                 global.clubs = data;
                 deferred.resolve();
                 db.close();

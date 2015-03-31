@@ -13,12 +13,12 @@ var Q = require('q'),
     utils = require('./utils.js');
 
 module.exports = {
-    getUsersLookup: function(remaining) {
-        console.log('Twitter service. Getting users lookup...');
+    getUsersLookup: function() {
+        console.log('Twitter service. Getting users lookup... ');
         var deferred = Q.defer();
         var usernames = utils.getUserNames();
 
-        if (usernames.length > 0 && remaining > 0 && usernames.trim() !== '') {
+        if (usernames.length > 0 && global.remaining > 0 && usernames.trim() !== '') {
             client.get('users/lookup', {
                 screen_name: usernames
             }, function(error, users) {
