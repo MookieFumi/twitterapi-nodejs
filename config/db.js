@@ -1,5 +1,8 @@
 /*global module*/
 
 module.exports = {
-    url: 'mongodb://127.0.0.1:27017/twitter'
+    url: function () {
+    	return process.env.NODE_MONGOURL || 'mongodb://localhost:28017';    	
+    }(),
+    collectionName: 'twitter-stats'
 };

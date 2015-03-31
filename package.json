@@ -1,26 +1,22 @@
 {
-  "name": "twitterapi-nodejs",
-  "version": "1.0.0",
-  "main": "app.js",
-  "dependencies": {
-    "moment": "^2.9.0",
-    "mongodb": "^2.0.25",
-    "q": "^1.2.0",
-    "twitter": "^1.2.5",
-    "underscore": "^1.8.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "MookieFumi",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MookieFumi/twitterapi-nodejs.git"
-  },
-  "bugs": {
-    "url": "https://github.com/MookieFumi/twitterapi-nodejs/issues"
-  },
-  "homepage": "https://github.com/MookieFumi/twitterapi-nodejs"
+    "name": "twitterapi-nodejs",
+    "version": "1.0.0",
+    "main": "app.js",
+    "dependencies": {
+        "moment": "^2.9.0",
+        "mongodb": "^2.0.25",
+        "q": "^1.2.0",
+        "twitter": "^1.2.5",
+        "underscore": "^1.8.2"
+    },
+    "author": "MookieFumi",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MookieFumi/twitterapi-nodejs.git"
+    },
+    "bugs": {
+        "url": "https://github.com/MookieFumi/twitterapi-nodejs/issues"
+    },
+    "homepage": "https://github.com/MookieFumi/twitterapi-nodejs"
 }

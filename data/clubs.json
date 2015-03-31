@@ -1,1 +1,246 @@
-[{"username":"FCBarcelona","country":"spain","displayname":"F.C. Barcelona","last_update":"2015-03-30T17:00:15.908Z"},{"username":"realmadrid","country":"spain","displayname":"Real Madrid","last_update":"2015-03-30T17:00:15.908Z"},{"username":"Atleti","country":"spain","displayname":"Atletico de Madrid","last_update":"2015-03-30T17:00:15.908Z"},{"username":"valenciacf","country":"spain","displayname":"Valencia C.F","last_update":"2015-03-30T17:00:15.908Z"},{"username":"sevillafc","country":"spain","displayname":"Sevilla F.C","last_update":"2015-03-30T17:00:15.908Z"},{"username":"MalagaCF","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"AthleticClub","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"RealSociedad","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"rccelta_oficial","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"RVMOficial","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"RCDEspanyol","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"elgetafe","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"sdeibar","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"elchecfoficial","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"RCDeportivo","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"LevanteUD","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"GranadaCdeF","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"U_D_Almeria","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"cordobacfsad","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"VLL_elGOL","country":"spain","last_update":"2015-03-30T17:00:15.908Z"},{"username":"ChelseaFC","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"MCFC","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"Arsenal","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"ManUtd","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"LFC","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"SouthamptonFC","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"SpursOfficial","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"SwansOfficial","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"whufc_official","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"stokecity","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"CPFC","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"NUFC","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"Everton","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"WBAFCofficial","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"HullCity","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"AVFCOfficial","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"SunderlandAFC","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"BurnleyOfficial","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"QPRFC","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"OfficialFOXES","country":"england","last_update":"2015-03-30T17:00:15.908Z"},{"username":"juventusfces","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"OfficialASRoma","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"OfficialSSLazio","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"sampdoria","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"sscnapoli","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"acffiorentina","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"TorinoFC_1906","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"acmilan","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"@Inter","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"GenoaCFC","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"palermocalcioit","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"Udinese_1896","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"EmpoliCalcio","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"SassuoloUS","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"ACChievoVerona","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"HellasVeronaFC","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"Atalanta_BC","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"CagliariCalcio","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"cesenacalcio","country":"italy","last_update":"2015-03-30T17:00:15.908Z"},{"username":"ParmaFC","country":"italy","last_update":"2015-03-30T17:00:15.908Z"}]
+[{
+    "username": "FCBarcelona",
+    "country": "spain",
+    "displayname": "F.C. Barcelona",
+    "last_update": ""
+}, {
+    "username": "realmadrid",
+    "country": "spain",
+    "displayname": "Real Madrid",
+    "last_update": ""
+}, {
+    "username": "Atleti",
+    "country": "spain",
+    "displayname": "Atletico de Madrid",
+    "last_update": ""
+}, {
+    "username": "valenciacf",
+    "country": "spain",
+    "displayname": "Valencia C.F",
+    "last_update": ""
+}, {
+    "username": "sevillafc",
+    "country": "spain",
+    "displayname": "Sevilla F.C",
+    "last_update": ""
+}, {
+    "username": "MalagaCF",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "AthleticClub",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "RealSociedad",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "rccelta_oficial",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "RVMOficial",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "RCDEspanyol",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "elgetafe",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "sdeibar",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "elchecfoficial",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "RCDeportivo",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "LevanteUD",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "GranadaCdeF",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "U_D_Almeria",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "cordobacfsad",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "VLL_elGOL",
+    "country": "spain",
+    "last_update": ""
+}, {
+    "username": "ChelseaFC",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "MCFC",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "Arsenal",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "ManUtd",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "LFC",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "SouthamptonFC",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "SpursOfficial",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "SwansOfficial",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "whufc_official",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "stokecity",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "CPFC",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "NUFC",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "Everton",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "WBAFCofficial",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "HullCity",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "AVFCOfficial",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "SunderlandAFC",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "BurnleyOfficial",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "QPRFC",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "OfficialFOXES",
+    "country": "england",
+    "last_update": ""
+}, {
+    "username": "juventusfces",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "OfficialASRoma",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "OfficialSSLazio",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "sampdoria",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "sscnapoli",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "acffiorentina",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "TorinoFC_1906",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "acmilan",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "@Inter",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "GenoaCFC",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "palermocalcioit",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "Udinese_1896",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "EmpoliCalcio",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "SassuoloUS",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "ACChievoVerona",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "HellasVeronaFC",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "Atalanta_BC",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "CagliariCalcio",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "cesenacalcio",
+    "country": "italy",
+    "last_update": ""
+}, {
+    "username": "ParmaFC",
+    "country": "italy",
+    "last_update": ""
+}]

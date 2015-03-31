@@ -4,8 +4,9 @@ var Q = require('q'),
     moment = require('moment'),
     _ = require('underscore'),
     fs = require('fs'),
+    dbConfig = require('./config/db.js'),
     MongoClient = require('mongodb').MongoClient,
-    dbConfig = require('./config/db.js');
+    MongoServer = require('mongodb').Server;
 
 module.exports = {
     transformData: function(users) {
@@ -28,6 +29,7 @@ module.exports = {
                 day_position: 0,
                 week: parseInt(date.format('ww')),
                 week_position: 0,
+                type: 'soccer',
                 id: sortedUser[i].id,
                 name: sortedUser[i].name,
                 screen_name: sortedUser[i].screen_name,
@@ -44,7 +46,6 @@ module.exports = {
 
         return deferred.promise;
     },
-
     saveData: function(data) {
         if (global.clubs.length > 0) {
             fs.writeFile('./data/clubs.json', JSON.stringify(global.clubs), function(err) {
@@ -53,11 +54,17 @@ module.exports = {
         }
 
         if (data.length > 0) {
-            MongoClient.connect(dbConfig.url, function(err, db) {
-                if (err) throw err;
+            var url = dbConfig.url;
+            MongoClient.connect(url, function(err, db) {
+                var twitterDb = db;
+                twitterDb.s.databaseName = dbConfig.collectionName;
+                if (err) {
+                    console.log(err);
+                    throw err;
+                }
+
                 for (var i = data.length - 1; i >= 0; i--) {
-                    //insert record
-                    db.collection('users').insert(data[i], function(err, records) {
+                    twitterDb.collection('users-stats').insert(data[i], function(err, records) {
                         if (err) throw err;
                     });
                 }

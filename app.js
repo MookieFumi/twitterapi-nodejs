@@ -4,12 +4,13 @@
 var fs = require('fs'),
     moment = require('moment'),
     twitterService = require('./twitterService.js'),
-    dataService = require('./dataService.js');
+    dataService = require('./dataService.js'),
+    dbConfig = require('./config/db.js');
 
 global.clubs = [];
 
-// setInterval(function() {    
-console.log(moment.utc().toDate());
+// setInterval(function() {
+console.log(moment.utc().toDate() + ' Mongo:' + dbConfig.url);
 fs.readFile('./data/clubs.json', function(err, data) {
     if (err) throw err;
     global.clubs = JSON.parse(data);
@@ -18,4 +19,4 @@ fs.readFile('./data/clubs.json', function(err, data) {
         .then(dataService.transformData)
         .then(dataService.saveData);
 });
-// }, 60 * 60 * 1000); //every hour
+// }, 30 * 60 * 1000);
