@@ -21,16 +21,19 @@ module.exports = {
                     username: global.clubs[i].username
                 }, {
                     $set: {
-                        last_update: new Date((new Date(parseInt(date.format('YYYY')), parseInt(date.format('MM')), parseInt(date.format('DD')))))
+                        last_update: new Date(
+                            parseInt(date.format('YYYY')),
+                            parseInt(date.format('MM')),
+                            parseInt(date.format('DD')))
                     }
                 });
-            };
+            }
             db.close();
             deferred.resolve();
         });
 
         return deferred.promise;
-    }, 
+    },
     getUserNames: function(remaining) {
         global.remaining = remaining;
         console.log('Data service. Getting users names...(remaining: ' + global.remaining + ')');
@@ -44,9 +47,9 @@ module.exports = {
                     $ne: new Date(parseInt(now.format('YYYY')), parseInt(now.format('MM')), parseInt(now.format('DD')))
                 }
             }).limit(dbConfig.limit).toArray(function(err, data) {
-                global.clubs = data;                
-                deferred.resolve();
+                global.clubs = data;
                 db.close();
+                deferred.resolve();
             });
         });
 
@@ -102,15 +105,17 @@ module.exports = {
                     throw err;
                 }
 
-                for (var i = data.length - 1; i >= 0; i--) {
-                    db.collection(dbConfig.twitter_stats).insert(data[i], function(err) {
-                        if (err) throw err;
-                    });
-                }
+                db.collection(dbConfig.twitter_stats).insert(data, function(err) {
+                    if (err) {
+                        console.log(err);
+                        throw err;
+                    }
+                });
+
+                db.close();
+                deferred.resolve();
             });
         }
-
-        deferred.resolve();
         return deferred.promise;
     }
 };
