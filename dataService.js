@@ -5,8 +5,7 @@ var Q = require('q'),
     _ = require('underscore'),
     fs = require('fs'),
     dbConfig = require('./config/db.js'),
-    MongoClient = require('mongodb').MongoClient,
-    MongoServer = require('mongodb').Server;
+    MongoClient = require('mongodb').MongoClient;
 
 module.exports = {
     transformData: function(users) {
