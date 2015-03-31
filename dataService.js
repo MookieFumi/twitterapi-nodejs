@@ -3,12 +3,57 @@
 var Q = require('q'),
     moment = require('moment'),
     _ = require('underscore'),
-    fs = require('fs'),
     dbConfig = require('./config/db.js'),
     MongoClient = require('mongodb').MongoClient;
 
 module.exports = {
+    updateUserNames: function() {
+        console.log('Data service. Updating users names...');
+        var deferred = Q.defer();
+
+        MongoClient.connect(dbConfig.url, function(err, db) {
+            if (err) {
+                throw err;
+            }
+            var date = moment.utc();
+            for (var i = global.clubs.length - 1; i >= 0; i--) {
+                db.collection(dbConfig.user_names).update({
+                    username: global.clubs[i].username
+                }, {
+                    $set: {
+                        last_update: new Date((new Date(parseInt(date.format('YYYY')), parseInt(date.format('MM')), parseInt(date.format('DD')))))
+                    }
+                });
+            };
+            db.close();
+            deferred.resolve();
+        });
+
+        return deferred.promise;
+    },
+    getUserNames: function() {
+        console.log('Data service. Getting users names...');
+        var deferred = Q.defer();
+        var now = moment.utc();
+
+        MongoClient.connect(dbConfig.url, function(err, db) {
+            if (err) throw err;
+            db.collection(dbConfig.user_names).find({
+                last_update: {
+                    $ne: new Date(parseInt(now.format('YYYY')), parseInt(now.format('MM')), parseInt(now.format('DD')))
+                }
+            }).toArray(function(err, data) {
+                global.clubs = data;
+                deferred.resolve();
+                db.close();
+            });
+        });
+
+        return deferred.promise;
+    },
     transformData: function(users) {
+        console.log('Data service. Transforming data...');
+
         var deferred = Q.defer();
         var data = [];
         var date = moment.utc();
@@ -46,30 +91,25 @@ module.exports = {
         return deferred.promise;
     },
     saveData: function(data) {
-        if (global.clubs.length > 0) {
-            fs.writeFile('./data/clubs.json', JSON.stringify(global.clubs), function(err) {
-                if (err) throw err;
-            });
-        }
+        console.log('Data service. Saving data...');
+        var deferred = Q.defer();
 
         if (data.length > 0) {
-            var url = dbConfig.url;
-            MongoClient.connect(url, function(err, db) {
-                var twitterDb = db;
-                twitterDb.s.databaseName = dbConfig.collectionName;
+            MongoClient.connect(dbConfig.url, function(err, db) {
                 if (err) {
                     console.log(err);
                     throw err;
                 }
 
                 for (var i = data.length - 1; i >= 0; i--) {
-                    twitterDb.collection('users-stats').insert(data[i], function(err, records) {
+                    db.collection(dbConfig.twitter_stats).insert(data[i], function(err) {
                         if (err) throw err;
                     });
                 }
             });
         }
 
-        console.log('Data updated');
+        deferred.resolve();
+        return deferred.promise;
     }
 };

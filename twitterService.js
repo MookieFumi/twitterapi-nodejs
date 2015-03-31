@@ -14,10 +14,11 @@ var Q = require('q'),
 
 module.exports = {
     getUsersLookup: function(remaining) {
+        console.log('Twitter service. Getting users lookup...');
         var deferred = Q.defer();
         var usernames = utils.getUserNames();
 
-        if (remaining > 0 && usernames.trim() !== '') {
+        if (usernames.length > 0 && remaining > 0 && usernames.trim() !== '') {
             client.get('users/lookup', {
                 screen_name: usernames
             }, function(error, users) {
@@ -38,6 +39,7 @@ module.exports = {
     },
 
     getQuota: function() {
+        console.log('Twitter service. Getting quota...');
         var deferred = Q.defer();
         client.get('application/rate_limit_status', function(error, data) {
             if (error) throw error;

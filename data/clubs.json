@@ -1,27 +1,22 @@
 [{
     "username": "FCBarcelona",
     "country": "spain",
-    "displayname": "F.C. Barcelona",
-    "last_update": "" 
+    "last_update": ""
 }, {
     "username": "realmadrid",
     "country": "spain",
-    "displayname": "Real Madrid",
     "last_update": ""
 }, {
     "username": "Atleti",
     "country": "spain",
-    "displayname": "Atletico de Madrid",
     "last_update": ""
 }, {
     "username": "valenciacf",
     "country": "spain",
-    "displayname": "Valencia C.F",
     "last_update": ""
 }, {
     "username": "sevillafc",
     "country": "spain",
-    "displayname": "Sevilla F.C",
     "last_update": ""
 }, {
     "username": "MalagaCF",
@@ -196,7 +191,7 @@
     "country": "italy",
     "last_update": ""
 }, {
-    "username": "@Inter",
+    "username": "Inter",
     "country": "italy",
     "last_update": ""
 }, {
