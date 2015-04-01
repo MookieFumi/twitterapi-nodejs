@@ -4,6 +4,7 @@ var Q = require('q'),
     moment = require('moment'),
     _ = require('underscore'),
     dbConfig = require('./config/db.js'),
+    utils = require('./utils.js'),
     MongoClient = require('mongodb').MongoClient;
 
 module.exports = {
@@ -40,15 +41,19 @@ module.exports = {
                 throw err;
             }
             var date = new Date();
-            for (var i = 0; i < global.clubs.length; i++) {
-                db.collection(dbConfig.user_names).update({
-                    username: global.clubs[i].username
-                }, {
-                    $set: {
-                        last_update: date
-                    }
-                });
-            }
+
+            db.collection(dbConfig.user_names).update({
+                username: {
+                    $in: utils.getUserNames().split(',')
+                }
+            }, {
+                $set: {
+                    last_update: date
+                }
+            }, {
+                multi: true
+            });
+
             db.close();
             deferred.resolve();
         });
@@ -105,8 +110,7 @@ module.exports = {
                 db.close();
                 deferred.resolve();
             });
-        }
-        else{
+        } else {
             deferred.reject();
         }
         return deferred.promise;
