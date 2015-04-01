@@ -1,6 +1,4 @@
-/*global require */
-//db.users.find({ year: {$eq: 2015}, week: {$eq: 14}, followers_count: { $gte: 500000 } }).sort( { followers_count: -1 } ).limit(10);
-
+/*global global, require, process */
 var moment = require('moment'),
     colors = require('colors'),
     twitterService = require('./twitterService.js'),
@@ -10,7 +8,7 @@ var moment = require('moment'),
 global.clubs = [];
 global.remaining = 0;
 
-console.log(colors.bgYellow(moment.utc().toDate() + ' Mongo:' + dbConfig.url));
+console.log(colors.bgBlue(moment.utc().toDate() + ' Mongo:' + dbConfig.url));
 
 twitterService.getQuota()
     .then(dataService.getUserNames)
@@ -19,7 +17,7 @@ twitterService.getQuota()
     .then(dataService.saveData)
     .then(dataService.updateUserNames)
     .then(function() {
-        console.log(colors.bgBlue("Process finished. " + moment.utc().toDate()));
+        console.log(colors.bgGreen("Process finished. " + moment.utc().toDate()));
         process.exit();
     })
     .fail(function(err) {

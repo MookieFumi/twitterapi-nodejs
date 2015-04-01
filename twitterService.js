@@ -1,7 +1,6 @@
-/*global require, module, clubs*/
+/*global global, module, require */
+
 var Q = require('q'),
-    moment = require('moment'),
-    _ = require('underscore'),
     Twitter = require('twitter'),
     twitterConfig = require('./config/twitter.js'),
     client = new Twitter({
@@ -23,12 +22,6 @@ module.exports = {
                 screen_name: usernames
             }, function(error, users) {
                 if (error) throw error;
-                
-                var last_update = moment.utc();
-                _.each(clubs, function(club) {
-                    club.last_update = last_update;
-                });
-
                 deferred.resolve(users);
             });
         } else {

@@ -1,4 +1,4 @@
-/*global require, module*/
+/*global global, require, module*/
 
 var Q = require('q'),
     moment = require('moment'),
@@ -7,45 +7,21 @@ var Q = require('q'),
     MongoClient = require('mongodb').MongoClient;
 
 module.exports = {
-    updateUserNames: function() {
-        console.log('Data service. Updating users names...');
-        var deferred = Q.defer();
-
-        MongoClient.connect(dbConfig.url, function(err, db) {
-            if (err) {
-                throw err;
-            }
-            var date = moment.utc();
-            for (var i = global.clubs.length - 1; i >= 0; i--) {
-                db.collection(dbConfig.user_names).update({
-                    username: global.clubs[i].username
-                }, {
-                    $set: {
-                        last_update: new Date(
-                            parseInt(date.format('YYYY')),
-                            parseInt(date.format('MM')),
-                            parseInt(date.format('DD')))
-                    }
-                });
-            }
-            db.close();
-            deferred.resolve();
-        });
-
-        return deferred.promise;
-    },
     getUserNames: function(remaining) {
         global.remaining = remaining;
         console.log('Data service. Getting users names...(remaining: ' + global.remaining + ')');
         var deferred = Q.defer();
-        var now = moment.utc();
 
         MongoClient.connect(dbConfig.url, function(err, db) {
             if (err) throw err;
             db.collection(dbConfig.user_names).find({
-                last_update: {
-                    $ne: new Date(parseInt(now.format('YYYY')), parseInt(now.format('MM')), parseInt(now.format('DD')))
-                }
+                $or: [{
+                    last_update: {
+                        $gte: new Date()
+                    }
+                }, {
+                    last_update: ''
+                }]
             }).limit(dbConfig.limit).toArray(function(err, data) {
                 global.clubs = data;
                 db.close();
@@ -55,12 +31,37 @@ module.exports = {
 
         return deferred.promise;
     },
+    updateUserNames: function() {
+        console.log('Data service. Updating users names...');
+        var deferred = Q.defer();
+
+        MongoClient.connect(dbConfig.url, function(err, db) {
+            if (err) {
+                throw err;
+            }
+            var date = new Date();
+            for (var i = 0; i < global.clubs.length; i++) {
+                db.collection(dbConfig.user_names).update({
+                    username: global.clubs[i].username
+                }, {
+                    $set: {
+                        last_update: date
+                    }
+                });
+            }
+            db.close();
+            deferred.resolve();
+        });
+
+        return deferred.promise;
+    },
     transformData: function(users) {
         console.log('Data service. Transforming data...');
 
         var deferred = Q.defer();
         var data = [];
-        var date = moment.utc();
+        var now = new Date();
+        var nowMoment = moment(now);
 
         var sortedUser = _.sortBy(users, function(o) {
             return o.followers_count;
@@ -68,15 +69,11 @@ module.exports = {
 
         for (var i = 0; i < sortedUser.length; i++) {
             data.push({
-                date: date,
-                year: parseInt(date.format('YYYY')),
-                year_position: 0,
-                month: parseInt(date.format('MM')),
-                month_position: 0,
-                day: parseInt(date.format('DD')),
-                day_position: 0,
-                week: parseInt(date.format('ww')),
-                week_position: 0,
+                date: now,
+                year: parseInt(nowMoment.format('YYYY')),
+                month: parseInt(nowMoment.format('MM')),
+                day: parseInt(nowMoment.format('DD')),
+                week: parseInt(nowMoment.format('ww')),
                 type: 'soccer',
                 id: sortedUser[i].id,
                 name: sortedUser[i].name,
@@ -104,17 +101,13 @@ module.exports = {
                     console.log(err);
                     throw err;
                 }
-
-                db.collection(dbConfig.twitter_stats).insert(data, function(err) {
-                    if (err) {
-                        console.log(err);
-                        throw err;
-                    }
-                });
-
+                db.collection(dbConfig.twitter_stats).insert(data);
                 db.close();
                 deferred.resolve();
             });
+        }
+        else{
+            deferred.reject();
         }
         return deferred.promise;
     }

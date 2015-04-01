@@ -6,6 +6,7 @@
     heroku ps:scale web=1
     heroku logs --tail
 
+## MongoDB Commands
 
 	db['user-names_copy'].aggregate(
 	    {$match:{"country" : {$exists:true}}},
