@@ -17,10 +17,8 @@ twitterService.getQuota()
     .then(dataService.saveData)
     .then(dataService.updateUserNames)
     .then(function() {
-        console.log(colors.bgGreen("Process finished. " + moment.utc().toDate()));
-        process.exit();
+        console.log(colors.bgGreen("Process finished. " + moment.utc().toDate()));        
     })
     .fail(function(err) {
         console.log(colors.bgRed(err + '. ' + moment.utc().toDate()));
-        process.exit();
     });
