@@ -41,7 +41,6 @@ module.exports = {
                 throw err;
             }
             var date = new Date();
-
             db.collection(dbConfig.user_names).update({
                 username: {
                     $in: utils.getUserNames().split(',')
