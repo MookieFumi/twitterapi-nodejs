@@ -1,12 +1,14 @@
-/*global global, module */
+/*global global, module, require */
+
+var _ = require('underscore');
 
 module.exports = {
     getUserNames: function() {
         var values = '';
 
-        for (var i = 0; i < global.clubs.length; i++) {
-            values = values + global.clubs[i].username + ',';
-        }
+        _.each(global.clubs, function(club) {
+            values = values + club.username + ',';
+        });
 
         return values.substring(0, values.lastIndexOf(","));
     }

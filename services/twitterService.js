@@ -1,15 +1,16 @@
-/*global global, module, require */
+/*global global, module, require, process */
 
 var Q = require('q'),
     Twitter = require('twitter'),
-    twitterConfig = require('./config/twitter.js'),
+    path = require('path'),
+    twitterConfig = require(path.join(process.cwd(), 'config', 'twitter')),
     client = new Twitter({
         consumer_key: twitterConfig.consumer_key,
         consumer_secret: twitterConfig.consumer_secret,
         access_token_key: twitterConfig.access_token_key,
         access_token_secret: twitterConfig.access_token_secret
     }),
-    utils = require('./utils.js');
+    utils = require(path.join(process.cwd(), 'utils'));
 
 module.exports = {
     getUsersLookup: function() {
@@ -30,7 +31,6 @@ module.exports = {
 
         return deferred.promise;
     },
-
     getQuota: function() {
         console.log('Twitter service. Getting quota...');
         var deferred = Q.defer();
