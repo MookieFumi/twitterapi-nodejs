@@ -14,7 +14,7 @@ module.exports = {
         UserName.find({
                 $or: [{
                     last_update: {
-                        $lte: new Date()
+                        $gt: new Date()
                     }
                 }, {
                     last_update: null
