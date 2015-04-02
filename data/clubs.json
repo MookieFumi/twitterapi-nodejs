@@ -1,393 +1,453 @@
 [{
     "username": "FCBarcelona",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "realmadrid",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Atleti",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "valenciacf",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "sevillafc",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "MalagaCF",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "AthleticClub",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "RealSociedad",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "rccelta_oficial",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "RVMOficial",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "RCDEspanyol",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "elgetafe",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "sdeibar",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "elchecfoficial",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "RCDeportivo",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "LevanteUD",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "GranadaCdeF",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "U_D_Almeria",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "cordobacfsad",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "VLL_elGOL",
     "country": "spain",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "ChelseaFC",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "MCFC",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Arsenal",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "ManUtd",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "LFC",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "SouthamptonFC",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "SpursOfficial",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "SwansOfficial",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "whufc_official",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "stokecity",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "CPFC",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "NUFC",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Everton",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "WBAFCofficial",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "HullCity",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "AVFCOfficial",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "SunderlandAFC",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "BurnleyOfficial",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "QPRFC",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "OfficialFOXES",
     "country": "england",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "juventusfces",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "OfficialASRoma",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "OfficialSSLazio",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "sampdoria",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "sscnapoli",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "acffiorentina",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "TorinoFC_1906",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "acmilan",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Inter",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "GenoaCFC",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "palermocalcioit",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Udinese_1896",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "EmpoliCalcio",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "SassuoloUS",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "ACChievoVerona",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "HellasVeronaFC",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Atalanta_BC",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "CagliariCalcio",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "cesenacalcio",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "ParmaFC",
     "country": "italy",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "FCBayern",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "BVB",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "s04",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "bayer04fussball",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "VfL_Wolfsburg",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "borussia",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "FCAugsburg",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "achtzehn99",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Eintracht_News",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "werderbremen",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "1FSVMainz05",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "fckoeln",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "HerthaBSC",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Hannover96",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "sc_freiburg",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "HSV",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "SCPaderborn07",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "VfB",
     "country": "germany",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "PSG_inside",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "OL",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "OM_Officiel",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "AS_Monaco",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "ASSEofficiel",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "girondins",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "MontpellierHSC",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Lille_OSC",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "FCNantes",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "EAG_Officiel",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "staderennais",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "ogcnice",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "s_c_bastia",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "SMCaen_officiel",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "Stade_de_Reims",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "etgfc",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "FCLorientOff",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "ToulouseFC",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "rclensofficiel",
     "country": "france",
-    "last_update": ""
+    "last_update": null
 }, {
     "username": "FCMetz_officiel",
     "country": "france",
-    "last_update": ""
+    "last_update": null
+}, {
+    "username": "GalatasaraySK",
+    "country": "turkey",
+    "last_update": null
+}, {
+    "username": "Besiktas",
+    "country": "turkey",
+    "last_update": null
+}, {
+    "username": "Fenerbahce",
+    "country": "turkey",
+    "last_update": null
+}, {
+    "username": "SantosFC",
+    "country": "brazil",
+    "last_update": null
+}, {
+    "username": "CARPoficial",
+    "country": "argentina",
+    "last_update": null
+}, {
+    "username": "BocaJrsOficial",
+    "country": "argentina",
+    "last_update": null
+}, {
+    "username": "SanLorenzo",
+    "country": "argentina",
+    "last_update": null
+}, {
+    "username": "RacingClub",
+    "country": "argentina",
+    "last_update": null
+}, {
+    "username": "AHuracan",
+    "country": "argentina",
+    "last_update": null
+}, {
+    "username": "ColoColo",
+    "country": "chile",
+    "last_update": null
+}, {
+    "username": "udechile",
+    "country": "chile",
+    "last_update": null
+}, {
+    "username": "OficialCAP",
+    "country": "uruguay",
+    "last_update": null
+}, {
+    "username": "clubnacionalpy",
+    "country": "uruguay",
+    "last_update": null
+}, {
+    "username": "CF_America",
+    "country": "mexico",
+    "last_update": null
+}, {
+    "username": "Chivas",
+    "country": "mexico",
+    "last_update": null
 }]
