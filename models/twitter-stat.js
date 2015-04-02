@@ -21,4 +21,14 @@ var twitterStatSchema = new Schema({
     profile_image_url_https: String
 });
 
+twitterStatSchema.index({
+    year: 1,
+    month: 1,
+    day: 1,
+    week: 1,
+    id: 1,
+}, {
+    unique: true
+});
+
 module.exports = mongoose.model('twitter-stats', twitterStatSchema);
