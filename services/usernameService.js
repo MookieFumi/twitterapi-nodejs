@@ -2,6 +2,7 @@
 
 var Q = require('q'),
     path = require('path'),
+    moment = require('moment'),
     utils = require(path.join(process.cwd(), 'utils')),
     UserName = require(path.join(process.cwd(), 'models', 'user-name'));
 
@@ -11,12 +12,17 @@ module.exports = {
         console.log('Data service. Getting users names...(remaining: ' + global.remaining + ')');
 
         var deferred = Q.defer();
+        var start = moment().startOf('day');
+
         UserName.find({
                 $or: [{
                     last_update: {
-                        $gt: new Date()
+                        $not: {
+                            $gte: start.toDate()
+                        }
                     }
                 }, {
+
                     last_update: null
                 }]
             })
